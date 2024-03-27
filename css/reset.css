@@ -1,0 +1,142 @@
+/* Reset CSS */
+
+/* Box sizing border-box reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default margin and padding from body */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default styles for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Remove default styles for links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Remove default styles for images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove default styles for form elements */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* Remove default styles for tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Resetting form elements to have consistent appearance */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Correcting font family inconsistency in older browsers */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Correcting inability to style clickable input types in iOS */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Resetting inline block alignment in older browsers */
+* {
+  vertical-align: middle;
+}
+
+/* Correcting odd em unit font sizing in all browsers */
+html {
+  font-size: 62.5%;
+}
+
+/* Correcting the block display not defined for any HTML5 element in IE8/9 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Avoiding gaps between aligned elements when inline-block elements are used */
+* {
+  vertical-align: middle;
+}
+
+/* Preventing text from wrapping unevenly across columns */
+* {
+  word-wrap: break-word;
+  word-break: break-word;
+}
