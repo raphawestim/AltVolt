@@ -122,6 +122,10 @@ body{
   padding: $spacing-huge !important;
   position: relative;
 
+  .screen-only{
+    display: none;
+  }
+
   &::before{
     content: "";
     position: absolute;
@@ -384,7 +388,7 @@ footer{
       position: absolute;
       top: 10%;
       right: 0;
-      width: 40px;
+      width: 10px;
       height: 1150px;
       background-color: #E5DA00;
     }
@@ -420,4 +424,73 @@ footer{
       gap: 10px;
     }
   }
+
+  .bloco-middle{
+
+    .row{
+      justify-content: start !important;
+
+      .screen-only{
+        display: none;
+      }
+
+    }
+
+    
+    padding: $spacing-lg !important;
+    background-color: $color-black !important;
+    background-image: none;
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 10px;
+      height: 1150px;
+      background-color: #E5DA00;
+    }
+  }
 }
+
+@media only screen and (max-width: 1024px) {
+  .bloco{
+    padding: $spacing-xxxs !important;
+  }
+
+  .bloco-intro{
+    padding: $spacing-xxxs !important;
+    padding-top: $spacing-giant !important;
+
+    .titulo-intro{
+      font-size: $font-size-xl !important;
+    }
+
+    .descricao-intro{
+      font-size: $font-size-sm !important;
+    }
+
+    .grupo-botao{
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .bloco-middle{
+    background-image: none;
+    
+    
+
+    .screen-default{
+      display: none;
+    }
+
+    .screen-only{
+      display: block;
+    }
+  }
+
+  
+}
+
