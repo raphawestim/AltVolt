@@ -6,11 +6,10 @@
   <link rel="icon" href="src/favicon.png" type="image/x-icon">
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+  <script src="vendors/jquery/jquery-3.7.1.js"></script>
   <!-- Bootstrap 5.3.3 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -27,7 +26,11 @@
 
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.className += ' js';
+  </script>
   <title>Alt Volt</title>
 </head>
 <body>
@@ -36,29 +39,29 @@
     <i class="fa-solid fa-bars menu-mobile"></i>
     <nav>
       <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Quem Somos</a></li>
-        <li><a href="#">Soluções</a></li>
-        <li><a href="#">Vantagens</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Trabalhe conosco</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#quemSomos">Quem Somos</a></li>
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#vatagens">Vantagens</a></li>
+        <li><a href="#portifolio">Portfólio</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#trabalheConosco">Trabalhe conosco</a></li>
       </ul>
     </nav>
   </header>
   <main>
 
-    <section id="home" class="bloco-intro">
+    <section id="home" class="item-conteudo bloco-intro">
       <div class="container">
         <div class="row ">
           <div class="col-md-7 margin-top-spacing-xxxl">
-            <h1 class="titulo-intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            <p class="descricao-intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione repellat numquam sunt? Totam voluptatem maxime nisi, deleniti veniam quam earum accusantium minus! Iusto voluptates quod sit dolorem blanditiis alias earum.</p>
+            <h1 class="titulo-intro">Trazendo Energia à Vida</h1>
+            <p class="descricao-intro">Na AltVolt, nossa paixão é trazer energia à vida. Como uma empresa especializada em engenharia elétrica e obras, estamos comprometidos em fornecer soluções de alta qualidade para as necessidades elétricas mais exigentes. Com uma equipe de especialistas experientes e uma abordagem inovadora, oferecemos serviços que vão desde o projeto e instalação de estruturas elétricas até a manutenção e atualização de sistemas existentes.</p>
             <div class="grupo-botao">
-              <a id="botaoEmail" data-translate="requestQuote" href="mailto:contato@foxpixel.com.br" class="btn-contato">solicitar orçamento</a>
+              <a id="botaoEmail" data-translate="requestQuote" href="mailto:orcamento@altvolt.com.br" class="btn-contato">solicitar orçamento</a>
               <button id="whatsappButton" data-translate="talkViaWhatsapp" class="btn-contato">
                 <i class="fa-brands fa-whatsapp margin-right-spacing-nano" id="icon-whats"></i>
-                <span class="button-text">falar por whatsapp</span>
+                <span class="button-text whatsapp">falar por whatsapp</span>
               </button>  
             </div>
           </div>
@@ -66,16 +69,24 @@
       </div>
     </section>
 
-    <section id="quemSomos" class="bloco bloco-middle">
+    <section id="quemSomos" class="item-conteudo bloco bloco-middle">
       <div class="container">
         <div class="row justify-content-end">
             <div class="col-lg-5 col-md-10 screen-default">
               <h2 class="titulo-all">Quem somos?</h2>
-              <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-              <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <p class="descricao">A AltVolt é uma empresa líder em engenharia elétrica e obras, comprometida em fornecer soluções de alta qualidade e confiabilidade para clientes em todo o país. Com uma equipe de especialistas apaixonados e altamente qualificados, estamos dedicados a superar as expectativas de nossos clientes em cada projeto que realizamos.</p>
+              <!-- <p class="descricao">Na AltVolt, valorizamos a integridade, o profissionalismo e a inovação. Estamos comprometidos em construir relacionamentos sólidos com nossos clientes, entendendo suas necessidades e oferecendo soluções personalizadas que agreguem valor real aos seus projetos. Nosso foco na segurança e no cumprimento das normas regulatórias garante a tranquilidade de nossos clientes em cada trabalho que realizamos.</p> -->
               <h2 class="titulo-all color-white">Missao, Visão & valores</h2>
-              <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-              <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+              <p class="descricao">Nossa missão é ser a primeira escolha quando se trata de serviços de engenharia elétrica e estruturas eletrônicas. Buscamos constantemente a excelência em cada etapa, desde o planejamento e design até a implementação e manutenção. Utilizamos as mais recentes tecnologias e práticas da indústria para garantir que cada solução que oferecemos seja eficiente, segura e sustentável.</p>
+              <p class="descricao">Nossa visão é ser reconhecidos como líderes no setor de engenharia elétrica e obras, sendo a escolha preferida dos clientes que buscam excelência, inovação e sustentabilidade. Buscamos constantemente evoluir e expandir nossas capacidades para atender às demandas em constante mudança do mercado, mantendo sempre o mais alto padrão de qualidade em nossos serviços.</p>
+              <p class="descricao">Nossos Valores são:</p>
+              <ul class="lista">
+                <li>Integridade: Agimos com honestidade, transparência e ética em todas as nossas interações e decisões.</li>
+                <li>Compromisso com a Qualidade: Buscamos a excelência em tudo o que fazemos, garantindo padrões elevados de qualidade e segurança em nossos serviços.</li>
+                <li>Inovação: Promovemos uma cultura de criatividade e busca por soluções inovadoras, impulsionando o progresso e a eficiência em nossos projetos.</li>
+                <li>Respeito: Valorizamos a diversidade, respeitamos as pessoas e valorizamos a colaboração e o trabalho em equipe.</li>
+                <li>Responsabilidade Social e Ambiental: Comprometemo-nos a agir de forma responsável em relação à comunidade e ao meio ambiente, buscando sempre minimizar nosso impacto e contribuir para um futuro mais sustentável.</li>
+              </ul>
             </div>
           <div class="screen-only">
             <div class="col">
@@ -93,7 +104,7 @@
       </div>
     </section>
 
-    <section id="solucoes" class="bloco">
+    <!-- <section id="solucoes" class="item-conteudo bloco">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-10">
@@ -105,22 +116,22 @@
           <div class="col"></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="Portfolio" class="item-conteudo bloco">
+    <section id="portfolio" class="item-conteudo bloco">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col">
               <!-- Swiper -->
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="src/img_slider1.png" alt=""></div>
                   <div class="swiper-slide"><img src="src/img_slider2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="src/img_slider2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="src/img_slider2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="src/img_slider2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="src/img_slider2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="src/img_slider2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="src/img_slider2.png" alt=""></div>
+                  <div class="swiper-slide"><img src="src/img_slider3.png" alt=""></div>
+                  <div class="swiper-slide"><img src="src/img_slider4.png" alt=""></div>
+                  <div class="swiper-slide"><img src="src/img_slider5.png" alt=""></div>
+                  <div class="swiper-slide"><img src="src/img_slider6.png" alt=""></div>
+                  <div class="swiper-slide"><img src="src/img_slider7.png" alt=""></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -218,15 +229,18 @@
       </div>
     </section>
 
-    <section id="quemSomos" class="bloco bloco-middle2">
+    <section id="quemSomos" class="item-conteudo bloco bloco-middle2">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-xl-4 col-sm-10">
             <h2 class="titulo-all">Vantagens</h2>
-            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p class="descricao">Ao escolher a AltVolt para suas necessidades de engenharia elétrica e estruturas eletrônicas, você está optando por uma parceria de excelência e confiabilidade. Aqui estão algumas das vantagens distintas que oferecemos:</p>
+            <p class="descricao">Expertise Especializada: Com uma equipe de especialistas altamente qualificados e experientes, garantimos soluções técnicas e inovadoras para os desafios mais complexos.</p>
+            <p class="descricao">Compromisso com a Qualidade: Nosso foco inabalável na qualidade assegura que cada projeto seja concluído com os mais altos padrões de excelência, segurança e durabilidade.</p>
+            <p class="descricao">Atendimento Personalizado: Entendemos as necessidades únicas de cada cliente e personalizamos nossos serviços para atender às suas especificações exatas, garantindo satisfação total.</p>
+            <p class="descricao">Inovação Constante: Estamos na vanguarda da tecnologia e das melhores práticas da indústria, trazendo soluções inovadoras que agregam valor e eficiência aos seus projetos.</p>
+            <p class="descricao">Prazos Cumpridos: Nossa eficiência operacional e planejamento meticuloso garantem que os projetos sejam concluídos dentro do prazo e dentro do orçamento estabelecido.</p>
+            <p class="descricao">Suporte Contínuo: Estamos ao seu lado mesmo após a conclusão do projeto, oferecendo suporte e manutenção para garantir a longevidade e o desempenho ideal de suas instalações elétricas.</p>
           </div>
           <div class="col-xl-8 col-sm-10">
             <img src="src/img05.png" alt="rapaz trabalhando em uma caixa de energia">
@@ -235,7 +249,7 @@
       </div>
     </section>
 
-    <section id="FAQ" class="item-conteudo bloco">
+    <section id="faq" class="item-conteudo bloco">
       <div class="container">
         <div class="row">
           <div class="col">

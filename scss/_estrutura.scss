@@ -1,6 +1,33 @@
-body{
+html, body{
   min-height: 100vh;
+  transition: font-size .3s ease;
   background-color: $color-black;
+}
+
+.js .item-conteudo{
+  opacity: 0;
+  transform: translate3d(-30px,0,0);
+  transition: .3s;
+}
+
+.item-conteudo.ativo{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition: .3s;
+}
+
+.lista{
+  margin-left: 20px;
+  font-family: $font-family-base !important;
+  color: $color-white;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-400; 
+  list-style: square;
+
+  li{
+    margin-bottom: $spacing-xxxs;
+  
+  }
 }
 
 .bloco-intro{
@@ -480,8 +507,6 @@ footer{
   .bloco-middle{
     background-image: none;
     
-    
-
     .screen-default{
       display: none;
     }

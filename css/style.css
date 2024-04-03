@@ -277,9 +277,34 @@ body {
   background: #E5DA00;
 }
 
-body {
+html, body {
   min-height: 100vh;
+  transition: font-size 0.3s ease;
   background-color: #000;
+}
+
+.js .item-conteudo {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.item-conteudo.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.3s;
+}
+
+.lista {
+  margin-left: 20px;
+  font-family: "Carbona", sans-serif !important;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 400;
+  list-style: square;
+}
+.lista li {
+  margin-bottom: 15px;
 }
 
 .bloco-intro {
