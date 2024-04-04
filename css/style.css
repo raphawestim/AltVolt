@@ -255,6 +255,7 @@ body {
 }
 .accordion .accordion-body {
   color: #fff;
+  font-family: "Carbona", sans-serif !important;
 }
 
 /* width */
@@ -281,6 +282,10 @@ html, body {
   min-height: 100vh;
   transition: font-size 0.3s ease;
   background-color: #000;
+}
+
+span.colorYellow {
+  color: #E5DA00;
 }
 
 .js .item-conteudo {
